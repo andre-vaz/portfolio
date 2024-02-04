@@ -1,0 +1,319 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 360px;
+    position: relative;
+    color: whitesmoke;
+    overflow-x: hidden;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 2.5rem;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.texto{
+    font-family: Roboto;
+}
+
+.skills-title{
+    font-size: 1.5rem;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.navbar-nav .nav-link {
+    color: whitesmoke;
+    transition: 1.5s;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.navbar-brand{
+    width: 35px;
+    height: 35px;
+    background-image: url("images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-toggler{
+    color: transparent;
+}
+
+.navbar-toggler-icon{
+    background-image: url("images/menu.svg");
+}
+
+.box{
+    height: 100vh;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#home-section {
+    position: relative;
+}
+
+#home-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("images/homebackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(70%) blur(5px);
+    z-index: -1;
+}
+
+.icons{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons:hover{
+    animation: jumpAnimation 1.5s infinite;
+}
+
+#github{
+    background-image: url("images/github.svg");
+}
+
+#linkedin{
+    background-image: url("images/linkedin.svg");
+}
+
+#cv{
+    background-image: url("images/file-cv.svg");
+}
+
+.picture{
+    width: 80%;
+    border-radius: 58% 0% 63% 0% / 44% 25% 50% 33%;
+    filter: grayscale(100%)  brightness(50%);
+}
+
+#about-section{
+    position: relative;
+}
+
+#about-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("images/aboutbackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(70%) blur(5px);
+    z-index: -1;
+}
+
+#codemaster-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#skills-section{
+    position: relative;
+}
+
+#skills-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("images/skillsbackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(70%) blur(5px);
+    z-index: -1;
+}
+
+.skills-img img{
+    width: 100px;
+    transition: 500ms;
+}
+
+/* .skills-img img:hover{
+    padding: 5px;
+} */
+
+#skills-title-box{
+    margin-top: -250px;
+}
+
+#portfolio-section{
+    position: relative;
+}
+
+#portfolio-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("images/comingsoon.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(70%) blur(5px);
+    z-index: -1;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+}
+
+#name-box{
+    position: relative;
+    left: -100%;
+    
+}
+
+#name-box.animate{
+    animation: lefttoright 1s ease-in-out forwards;
+}
+
+#title-box{
+    position: relative;
+    left: -100%;
+}
+
+#title-box.animate{
+    animation: lefttoright 1.5s ease-in-out forwards;
+}
+
+#icons-box{
+    position: relative;
+    left: -100%;
+}
+
+#icons-box.animate{
+    animation: lefttoright 1s ease-in-out forwards;
+}
+
+#about-title{
+    position: relative;
+    left: -100%;
+}
+
+#about-title.animate{
+    animation: lefttoright 1s ease-in-out forwards;
+}
+
+#about-box{
+    position: relative;
+    left: -100%;
+}
+
+#about-box.animate{
+    animation: lefttoright 1.5s ease-in-out forwards;
+}
+
+#my_picture{
+    position: relative;
+    right: -100%;
+}
+
+#my_picture.animate{
+    animation: righttoleft 1s ease-in-out forwards;
+}
+
+#skills-title-box,
+#frontend-box{
+    position: relative;
+    left: -100%;
+}
+
+#skills-title-box.animate{
+    animation: lefttoright 1s ease-in-out forwards;
+}
+
+#frontend-box.animate{
+    animation: lefttoright 1.5s ease-in-out forwards;
+}
+
+#backend-box{
+    position: relative;
+    right: -100%;
+}
+
+#backend-box.animate{
+    animation: righttoleft 1.5s ease-in-out forwards;
+}
+
+/* animations */
+
+@keyframes lefttoright{
+    to {
+        left: 0;
+    }
+}
+
+@keyframes righttoleft{
+    to {
+        right: 0;
+    }
+}
+
+@keyframes jumpAnimation {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}

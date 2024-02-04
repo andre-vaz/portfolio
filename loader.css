@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:aquamarine; /* Optional: Set background color */
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader img {
+    width: 100px; /* Adjust the size of your loader */
+    height: auto;
+}
+

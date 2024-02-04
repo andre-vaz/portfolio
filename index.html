@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>André Vaz</title>
+
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Local CSS -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#home-section"></a>
+                <button class="navbar-toggler" onclick="mudar()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home-section">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills-section">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio-section">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid box" id="home-section">
+        <div class="row w-100">
+            <div class="col-10 mx-auto d-flex flex-column justify-content-center">
+                <div class="title" id="name-box">André Vaz</div>
+                <div class="subtitle" id="title-box">Full-Stack Web Developer</div>
+                <div class="social d-flex gap-3 mt-3" id="icons-box">
+                    <a href="https://github.com/andre-vaz" id="github" class="icons" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/andr%C3%A9-vaz-97568a217/" id="linkedin" class="icons" target="_blank"></a>
+                    <a href="documents/CV-andre-EN.pdf" download="CV-andre-EN" id="cv" class="icons"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid box" id="about-section">
+        <div class="row d-flex justify-content-evenly align-items-center ">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="subtitle text-center text-lg-start" id="about-title">About</div>
+                <div class="texto" id="about-box">
+                    <p>
+                        Hello! I'm André, a recent graduate in Full Stack Web Development with <a href="https://codemaster.pt/" id="codemaster-link" target="_blank">codemaster</a>
+                    </p>
+                    <p>
+                        During my coursework, I immersed myself in both front-end and back-end development, gaining a comprehensive understanding of creating efficient and functional web applications. My passion for problem-solving and commitment to excellence drive me to be a dedicated and proactive professional.
+                    </p>
+                    <p>
+                        My eagerness to learn, coupled with a natural curiosity for problem-solving, are attributes that I believe are not only valuable professionally but also enhance my overall perspective on life. I am enthusiastic about applying my technical skills, constant commitment, and quick learning ability to contribute to challenging projects.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-8 col-md-6 col-lg-5 text-center" id="my_picture">
+                <img src="images/profilepicture.jpg" alt="Profile Picture" class="picture">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid box" id="skills-section">
+        <div class="row d-flex justify-content-start align-items-center w-100">
+            <div class="col-12 col-md-11 mx-auto">
+                <div class="subtitle mb-5" id="skills-title-box">Skills</div>
+                <div class="row skills-container d-flex justify-content-start gap-md-5">
+                    <div class="col-12 col-md-5 skills-box" id="frontend-box">
+                        <div class="skills-title mb-3">Front-End</div>
+                        <div class="skills-img d-flex gap-3">
+                            <img src="images/html5-wordmark.svg" alt="HTML">
+                            <img src="images/css3-wordmark.svg" alt="CSS">
+                            <img src="images/bootstrap-wordmark.svg" alt="Bootstrap">
+                            <img src="images/javascript.svg" alt="javascript">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 skills-box mt-3 mt-md-0" id="backend-box">
+                        <div class="skills-title mb-3">Back-End & Data-Base</div>
+                        <div class="skills-img d-flex gap-3">
+                            <img src="images/java-wordmark.svg" alt="Java">
+                            <img src="images/php.svg" alt="PHP">
+                            <img src="images/mysql.svg" alt="MySQL">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid box" id="portfolio-section">
+        <div class="row">
+            <div class="col-12">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                &copy; 2024 André Vaz. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="functions.js"></script>
+    
+</body>
+</html>
